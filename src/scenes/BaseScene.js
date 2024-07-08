@@ -28,7 +28,7 @@ class BaseScene extends Phaser.Scene {
   }
 
   createMenu(menu, setupMenuEvents) {
-    let lastMenuPositionY = 0;
+    let lastMenuPositionY = -10;
 
     menu.forEach(menuItem => {
       const menuPosition = [this.screenCenter[0], this.screenCenter[1] + lastMenuPositionY];
